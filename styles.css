@@ -1,0 +1,171 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* all the element that overflow oin X axis will be hidden*/
+  overflow-x: hidden;
+
+  /* does not work on safary*/
+  /*** scroll-behavior: smooth; */
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #ffebcd; /* Orange header */
+  padding: 20px 0;
+  color: #999;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  color: #45260a;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: #45260a;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/* Main Content Section */
+
+#main-content {
+  padding: 100px 0;
+}
+
+#color-picker,
+#room-display {
+  text-align: center;
+}
+
+#room {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.wall {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+
+#wall1 {
+  background-color: #777; /* Default color */
+  left: 0;
+}
+
+#wall2 {
+  background-color: #777; /* Default color */
+  right: 0;
+}
+
+/* Gallery Section */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #ffa500; /* Orange footer */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container-signup {
+  max-width: 500px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

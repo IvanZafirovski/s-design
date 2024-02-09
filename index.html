@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S Design - Home Design and Decor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="container">
+        <h1>S Design</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main-content">
+      <div id="color-picker">
+        <h2>Choose a Color for Your Walls:</h2>
+        <input type="color" id="wall-color" value="#ffffff" />
+      </div>
+
+      <div id="room-display">
+        <h2>Preview Your Room:</h2>
+        <div id="room">
+          <div id="wall1" class="wall"></div>
+          <div id="wall2" class="wall"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="converted images/1/1/20220726_104004.jpg"" />
+        <img src="converted images/1/1/20220727_132343.jpg" alt="" />
+        <img src="converted images/1/1/20220727_183625.jpg" alt="" />
+        <img src="converted images/1/1/20220727_183638.jpg" alt="" />
+        <img src="converted images/1/1/20220727_183651.jpg" alt="" />
+        <img src="converted images/3/3/01.jpg" alt="" />
+        <!-- Gallery items will be dynamically generated here -->
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Contact Us</h2>
+      <!-- Contact information goes here -->
+      <p>&copy; 2024 S Design. All rights reserved.</p>
+    </footer>
+    <div class="container-signup">
+      <form action="/signup" method="POST" class="signup-form">
+        <h2>Sign Up for S Design</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="form-group">
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
