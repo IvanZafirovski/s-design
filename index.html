@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>S Design - Home Design and Decor</title>
+    <title>S Design.mk</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="sticky">
+    <header>
       <div class="container">
-        <h1>S Design</h1>
+        <h1>S Design.mk</h1>
         <nav>
           <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#who-we-are">Who Are We?</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#for-us">For Us?</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="hamburger-menu">
@@ -25,66 +26,148 @@
       </div>
     </header>
 
-    <section id="main-content">
-      <div id="color-picker">
-        <h2>Choose a Color for Your Walls:</h2>
-        <input type="color" id="wall-color" value="#ffffff" />
+    <section id="home" class="hero">
+      <img src="interior-painting-hand-image-1.jpg" alt="" />
+      <div class="container">
+        <h2>Welcome to S Design.mk</h2>
       </div>
+    </section>
 
-      <div id="room-display">
-        <h2>Preview Your Room:</h2>
-        <div id="room">
-          <div id="wall1" class="wall"></div>
-          <div id="wall2" class="wall"></div>
-        </div>
+    <section id="who-we-are">
+      <div class="container">
+        <h2>Who Are We?</h2>
+        <p>
+          We are S Design.mk, a team of passionate designers dedicated to
+          creating beautiful and functional spaces for our clients.
+        </p>
+        <h2>What We Do?</h2>
+        <p>
+          At S Design.mk, we specialize in home design, decor, and paint. We
+          transform your space into a place you'll love to call home.
+        </p>
+        <h2>Why Choose S Design for Your Home?</h2>
+        <p>- Expertise in design and decor</p>
+        <p>- Personalized service tailored to your needs</p>
+        <p>- Attention to detail and quality craftsmanship</p>
       </div>
     </section>
 
     <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-container">
-        <img src="converted images/1/1/20220726_104004.jpg"" />
-        <img src="converted images/1/1/20220727_132343.jpg" alt="" />
-        <img src="converted images/1/1/20220727_183625.jpg" alt="" />
-        <img src="converted images/1/1/20220727_183638.jpg" alt="" />
-        <img src="converted images/1/1/20220727_183651.jpg" alt="" />
-        <img src="converted images/3/3/01.jpg" alt="" />
-        <!-- Gallery items will be dynamically generated here -->
+      <div class="container">
+        <h2>Gallery</h2>
+        <img src="converted images/1/1/20220727_183647.jpg" alt="" />
+        <div class="gallery">
+          <img src="converted images/2/10.jpg" alt="" />
+          <div class="preview-image">
+            <img
+              src="converted images/3/20221113_163937.jpg"
+              alt="Preview Image"
+            />
+          </div>
+          <!-- Scrollable images -->
+          <div class="scrollable-images">
+            <img
+              src="converted images/1/20220727_183632.jpg"
+              alt="Gallery Image 1"
+            />
+            <img src="converted images/2/11.jpg" alt="Gallery Image 2" />
+            <!-- Add more images here -->
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer id="contact">
-      <h2>Contact Us</h2>
-      <!-- Contact information goes here -->
-      <p>&copy; 2024 S Design. All rights reserved.</p>
+    <section id="for-us">
+      <div class="container">
+        <h2>For Us?</h2>
+        <p>
+          For us, design is not just a job, it's our passion. We take pride in
+          our work and strive to exceed our clients' expectations with every
+          project.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Questions and Quotation</h2>
+        <form
+          id="contact-form"
+          action="mailto:zafiri.ivan@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="file" id="attachment" name="attachment" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+          <p>Contact Us:</p>
+          <p>Phone: 123-456-7890</p>
+          <p>Email: info@sdesign.mk</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Follow Us:</p>
+        <!-- Social media links -->
+        <div class="social-media">
+          <a href="https://www.facebook.com/sdesignmk"
+            ><img src="facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/sdesignmk"
+            ><img src="instagram-icon.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
     </footer>
-    <div class="container-signup">
-      <form action="/signup" method="POST" class="signup-form">
-        <h2>Sign Up for S Design</h2>
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
-        <div class="form-group">
-            <label for="question">Question:</label>
-            <textarea id="question" name="question" rows="4" required></textarea>
-        </div>
-        <button type="submit">Sign Up</button>
-    </form>
-      </form>
-    </div>
 
     <script src="script.js"></script>
   </body>

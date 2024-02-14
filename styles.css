@@ -1,171 +1,164 @@
-/* Global Styles */
+/* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-html {
-  font-size: 62.5%;
-  /* all the element that overflow oin X axis will be hidden*/
-  overflow-x: hidden;
 
-  /* does not work on safary*/
-  /*** scroll-behavior: smooth; */
-}
 body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f9ecd1; /* Light orange background */
+  color: #333; /* Text color */
 }
 
 .container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-  background-color: #ffebcd; /* Orange header */
-  padding: 20px 0;
-  color: #999;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow on header */
 }
 
-header h1 {
-  margin: 0;
-  color: #45260a;
-  text-align: center;
+h1 {
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
+  list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
 }
 
 .nav-links li {
-  margin: 0 20px;
+  margin-right: 20px;
 }
 
-.nav-links a {
-  color: #45260a;
+.nav-links li a {
+  color: #333;
   text-decoration: none;
 }
 
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-}
-
-/* Main Content Section */
-
-#main-content {
+.hero {
+  background-image: url("background-photo.jpg"); /* Background photo */
+  background-size: cover;
+  background-position: center;
   padding: 100px 0;
-}
-
-#color-picker,
-#room-display {
   text-align: center;
+  color: #fff;
 }
 
-#room {
-  width: 100%;
-  height: 200px;
-  border: 2px solid #333;
-  position: relative;
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px;
 }
 
-.wall {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-}
-
-#wall1 {
-  background-color: #777; /* Default color */
-  left: 0;
-}
-
-#wall2 {
-  background-color: #777; /* Default color */
-  right: 0;
-}
-
-/* Gallery Section */
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.gallery-container img {
-  width: 100%;
+.gallery img {
+  max-width: 100%;
   height: auto;
+  margin-right: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow on images */
 }
 
-footer {
-  background-color: #ffa500; /* Orange footer */
-  padding: 20px 0;
+.for-us {
+  padding: 100px 0;
   text-align: center;
 }
 
-.container-signup {
-  max-width: 500px;
-  margin: 100px auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-.signup-form {
-  text-align: center;
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
+  margin: 10px;
 }
 
 input[type="text"],
+input[type="tel"],
 input[type="email"],
-input[type="password"] {
+textarea,
+button {
   width: 100%;
   padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #333;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #555;
+}
+
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+  }
 }
