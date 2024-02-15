@@ -67,7 +67,7 @@
     text-align: center;
   }
   .hero-img {
-    max-width: 60%;
+    max-width: 80%;
   }
   .delivered-meals {
     justify-content: center;
@@ -195,12 +195,11 @@
 
 @media (max-width: 34em) {
   .grid {
-    row-gap: 4.8rem;
+    row-gap: 1.8rem;
   }
 
   .grid--2-cols,
-  .grid--3-cols,
-  .grid--4-cols {
+  .grid--3-cols {
     grid-template-columns: 1fr;
   }
 
