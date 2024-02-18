@@ -161,3 +161,12 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
+let linkInstagram = document.getElementById("link-instagram");
+linkInstagram.href = "https://www.instagram.com/sdesignmk";
+let linkInstagram1 = document.getElementById("link-instagram1");
+linkInstagram1.href = "https://www.instagram.com/sdesignmk";
+
+let linkFacebook = document.getElementById("link-facebook");
+linkFacebook.href = "https://www.facebook.com/profile.php?id=61556511593289";
+let linkFacebook1 = document.getElementById("link-facebook1");
+linkFacebook1.href = "https://www.facebook.com/profile.php?id=61556511593289";
