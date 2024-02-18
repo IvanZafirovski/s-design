@@ -183,9 +183,8 @@
 /**************************/
 .section-finished {
   padding: 9.6rem 0;
-
-  display: grid;
 }
+
 .section-how {
   padding: 9.6rem 0;
 }
@@ -615,12 +614,22 @@
 }
 
 /* Gallery styles */
-.gallery {
+.finished-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 10px;
 }
-
+.finished-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.finished-headline h1 {
+  font-size: 3.2rem;
+}
+.gallery-item {
+  margin: 30px 50px;
+}
 .gallery-item {
   overflow: hidden;
 }
@@ -661,19 +670,3 @@
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .modal-content {
-    max-width: 90%;
-    max-height: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-}

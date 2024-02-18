@@ -200,7 +200,9 @@
   /* .grid {
     row-gap: 1.8rem;
   } */
-
+  .finished-gallery {
+    grid-template-columns: 1fr;
+  }
   .grid--2-cols,
   .grid--3-cols {
     grid-template-columns: 1fr;
